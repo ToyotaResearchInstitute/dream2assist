@@ -1,0 +1,21 @@
+torch==2.9.1
+torchvision==0.24.1
+numpy==1.24.3
+tensorboard # ==2.13.0
+pandas # ==1.2.4
+matplotlib # ==3.5.0
+ruamel.yaml==0.17.4
+moviepy # ==1.0.3
+einops # ==0.3.0
+# protobuf==3.20.0
+gym # ==0.19.0
+scipy
+scikit-learn
+plotly
+imageio
+gymnasium >=0.28.1
+gymnasium[box2d]
+wandb
+opencv-python
+jax==0.4.33
+jax[cuda12]

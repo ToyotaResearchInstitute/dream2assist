@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dream2assist"
+description = "Dream2Assist: An MBRL Framework for Assisting Human Drivers"
+version = "0.0.1"
+requires-python = ">=3.10"
+authors = [
+    { name = "Jonathan DeCastro", email = "jonathan.decastro@tri.global" },
+    { name = "Thomas Balch", email = "thomas.balch@tri.global" },
+    { name = "Guy Rosman", email = "guy.rosman@tri.global" },
+]
+license = {text = "CC BY-NC 4.0"}
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dream2assist*"]
+
+[tool.setuptools.package-data]
+dream2assist = ["*.yaml", "assets/**/*"]
+
+[tool.black]
+line-length = 120
